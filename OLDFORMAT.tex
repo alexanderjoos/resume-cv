@@ -1,0 +1,332 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{enumitem}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
+
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0 em}{}[\color{black}\titlerule]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+% Add graybox functionality
+\newmdenv[
+  backgroundcolor=gray!20,
+  innertopmargin=-7pt,
+  innerbottommargin=10pt,
+  innerrightmargin=false,
+  innerleftmargin=2pt,
+  leftmargin=-10pt,
+  outerlinecolor=gray!20,
+  topline=false,
+  leftline=false,
+  bottomline=false,
+  rightline=false,
+  leftmargin=-1em, 
+  linewidth=4pt,    
+  skipbelow=0
+]{graybox}
+\AtBeginEnvironment{graybox}{\vspace{-4pt}}
+\AtEndEnvironment{graybox}{\vspace{-4pt}}
+
+\newcommand{\customsize}[2]{\fontsize{#1}{#2}\selectfont}
+
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\newcommand{\resumeProjectListStart}{\begin{itemize}[leftmargin=0pt, label={}]} 
+\newcommand{\resumeProjectListEnd}{\end{itemize}}
+\newcommand{\resumeProjectItemListStart}{%
+  \begin{itemize}[leftmargin=*, topsep=0, itemsep=0, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeProjectItemListEnd}{\end{itemize}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Alexander Joos} \\ \vspace{1pt}
+    \small +1-978-799-9242 $|$ \href{mailto:aaj46@cornell.edu}{\underline{aaj46@cornell.edu}} $|$ 
+    \href{https://linkedin.com/in/alexanderjoos1}{\underline{linkedin.com/in/alexanderjoos1}} 
+    % $|$
+    % \href{https://github.com/alexanderjoos}{\underline{github.com/alexanderjoos}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \begin{graybox}
+    \resumeSubheading
+      {Cornell University}{Ithaca, NY}
+      {B.A. Information Science (Data Science); GPA - 3.7}{Aug. 2022 -- Dec. 2025}
+    \resumeSubSubheading
+      {MEng Computer Science}{ Jan. 2026 -- Dec. 2026}
+    \resumeSubheading
+      {National University of Singapore}{Singapore}
+      {Yale NUS College Exchange Program}{Jan. 2025 - May 2025}
+    \end{graybox}
+
+    
+    \begin{itemize}[leftmargin=-10pt, label={}]
+    \item{
+    \textbf{(select) Coursework:}
+    {\small{{Machine Learning (Graduate), Software Engineering (Graduate), Data Structures \& Algorithms, Data Science, Data Mining, Backend Development, Object-Oriented Programming, Algorithm Design (Graduate), Deep Learning (Graduate), Statistics, Linear Algebra, Text Mining, LLM's, Functional Programming, Networking (Graduate), Computer Organization, Discrete Math, Web Dev, Calculus II, Tech Communication}
+    }}}
+    \end{itemize}
+    %Additional classes to addEquitable Computing, General Chemistry, Ecological Biology, Environmental Science
+    \resumeSubHeadingListEnd 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \begin{graybox}
+    \resumeSubheading
+      {Graduate Data Engineering Intern (Incoming)}{June 2026 -- Aug. 2026}
+      {Fidelity Investments, TBD}{TBD}
+    \end{graybox}
+    
+    \begin{graybox}
+    \resumeSubheading
+      {Data Engineering Intern}{June 2025 -- Aug. 2025}
+      {Fidelity Investments, Cloud and Platform Engineering}{Merrimack, NH}
+    \end{graybox}
+      \resumeItemListStart
+        \resumeItem{Developed, led cross-timezone KT trainings, and launched flask/AJAX based internal Ubuntu VM based webapp.}
+        \resumeItem{Supported data model comparison across DBs (Oracle, Postgres, CRDB, Snowflake) within the brokerage platform.}
+        \resumeItem{Implemented architecture, data storage and retrieval via Python/SQL \& front end via JavaScript/HTML/CSS/Flask.}
+        \resumeItem{Deployed Apache Webserver, TSD, SSL certification, firewall whitelisting, and OP/DEV/PROD launch.}
+      \resumeItemListEnd 
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+    \begin{graybox}
+    \resumeSubheading
+      {Data Analytics Intern}{May 2024 -- Aug. 2024}
+      {American Family Insurance: Homesite}{Boston, MA}
+    \end{graybox}
+      \resumeItemListStart
+        \resumeItem{Conducted data engineering in Google Cloud Platform on Fortune 50 retailer to aid Google Cloud data migration.}
+        \resumeItem{Built data architecture \& dashboard suite for Partner Management \& Executive Team in Looker Studio.}
+        \resumeItem{Programmed app scripts in Excel and Sheets in JavaScript and VBA to tailor functionality to business needs.}
+       \resumeItemListEnd
+     \begin{graybox}
+     \resumeSubheading
+       {Partner Distribution Intern}{June 2023 -- Aug. 2023}
+        {American Family Insurance: Homesite}{Boston, MA}
+     \end{graybox}
+       \resumeItemListStart
+         \resumeItem{Conducted Excel analysis on distribution partner \& top US auto carrier to infer competition feature importance.}
+         \resumeItem{Formulated semi-annual internal \& external reports leveraging Power Pivot/Power Query built dashboard.}
+       \resumeItemListEnd
+    \begin{graybox}
+    \resumeSubheading
+      {Guide}{Oct. 2022 -- Present}
+      {Cornell Outdoor Odyssey}{Ithaca, NY}
+    \end{graybox}
+      \resumeItemListStart
+        \resumeItem{Lead and mentor \textasciitilde10 incoming freshmen on 5–9-night backpacking trips on New York State trails.}
+        \resumeItem{Teach outdoor skills, build community, and foster an inclusive environment for students entering their first semester.}
+      \resumeItemListEnd
+    \begin{graybox}
+    \resumeSubheading
+      {Co-founder / Owner}{2018 -- 2022}
+      {Results Lawn Care: Landscaping Business}{Westford, MA}
+    \end{graybox}
+      \resumeItemListStart
+        \resumeItem{Managed operations and scheduling for 40+ recurring landscape maintenance customers.}
+        \resumeItem{Designed and maintained business website and coordinated customer communication.}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+%-----------PROJECTS----------- graybox stuff is vibe coded prolly should fix with standard tcolorbox
+%--------------------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------------------------
+\section{Projects}
+\resumeProjectListStart
+    \item
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading {\textbf{Open Source Systems \& Anomaly Detection:} \customsize{9}{11}{\emph{Apache Airflow Anomaly Detection }}}{Ongoing}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{Serving as Project Lead for 4-person Agile SWE team building an Airflow feature in a fork of Apache Airflow to detect anomalous task runtimes from historical DAG execution data in Python.}
+    \resumeProjectItemListEnd
+%--------------------------------------------------------------------------------------------------
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading
+    {\textbf{Full-Stack Mobile Development:} \customsize{9}{11}{\emph{Coursly (Course Review App)}}}{Nov. 2025}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{Built backend for a full-stack Cornell course review app, supporting course browsing, search, saves, and user profiles.}
+    \resumeItem{Developed Flask REST APIs, scraping pipeline, data model (SQLite), containers (Docker Compose), \& deployed in GCP.}
+    \resumeProjectItemListEnd
+%--------------------------------------------------------------------------------------------------
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading
+    {\textbf{Functional Programming \& Game Development:} \customsize{9}{11}{\emph{OCamlPacman}}}{Oct. 2025}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{Co-Built Pac-Man GUI game from scratch in OCaml, implementing modular mazes \& ghost AI. \href{https://www.youtube.com/watch?v=nqBE4g7SEJE}{\underline{YouTube Demo}}}
+    \resumeProjectItemListEnd
+%--------------------------------------------------------------------------------------------------
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading
+    {\textbf{NLP \& Unsupervised ML:} \customsize{9}{11}{\emph{Clustering Analysis on Workplace Gender \& Power}}}{Dec. 2024}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{LLM-cleaned email bodies into a high-dimensional TF-IDF matrix, capturing sentiment across 15,000+ messages.}
+    \resumeItem{Utilize DBSCAN, K-means, \& Cross Tabulation approaches, analyzing Gender-Power-Positional clusters.}
+    \resumeProjectItemListEnd
+%--------------------------------------------------------------------------------------------------
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading
+    {\textbf{LLM Fine-Tuning \& Classification:} \customsize{9}{11}{\emph{Old Bailey Verdict Prediction Model}}}{Nov. 2024}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{Fine-tuned Huggingface LLM on 300+ years of $>$100,000 Old Bailey case briefs (8 legal categories).}
+    \resumeItem{Performed “GUILTY” vs. “NOT GUILTY” classification, achieving 71\% weighted avg f1, outperforming baseline.}
+    \resumeProjectItemListEnd
+%--------------------------------------------------------------------------------------------------
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading
+    {\textbf{Data Mining \& Risk Analysis in R:} \customsize{9}{11}{\emph{Measuring Dangerous Roads in Chicago}}}{May 2023}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{As a group, analyzed {\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}} 800,000 datapoints relating to Chicago 2023 car crashes relating features and fatalities.}
+    \resumeItem{Utilized PCA, linear \& logistic regression, hierarchal clustering, k-means clustering, cross-validation, \& regularization.}
+    \resumeProjectItemListEnd
+%--------------------------------------------------------------------------------------------------
+    \begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-1 pt, right=-4 pt, top=-1 pt, bottom=8 pt]
+    \resumeProjectHeading
+    {\textbf{Feature Engineering \& Web Scraping:} \customsize{9}{11}{\emph{Socioeconomic Factors Influencing Alien Sightings}}}{Dec. 2023}
+    \end{tcolorbox}%
+    \resumeProjectItemListStart
+    \resumeItem{Merged global datasets on education, religion, drug use, and wealth to analyze sociocultural trends in alien sightings.}
+    \resumeItem{Used BeautifulSoup for large-scale scraping and scikit-learn for feature analysis and regression modeling.}
+    \resumeProjectItemListEnd
+    \resumeProjectListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0pt, label={}]
+    \small{\item{
+     \textbf{Back-end Development Tools}{: Python (pytest), Java (JUnit), OCaml (OUnit), C/C++, Bash, REST API, OOP, DSA} \\
+     \textbf{Analytics \& Front-end Tools}{: SQL, R, HTML, CSS, JavaScript, Flask, SQLite, Apache Airflow} \\
+     \textbf{Developer Tools}{: GitHub, Git, Docker (Compose), VS Code, PuTTY, Bash, Ubuntu,  RStudio, Google Colab, Jupyter} \\
+     \textbf{Enterprise Tools}{: BigQuery, Vertex AI, Looker, Power BI, DBeaver, Agile, Jira, Excel, PowerPoint, Tableau, Confluence } \\
+     \textbf{Libraries}{: scikit-learn, PyTorch, transformers, pandas, NumPy, matplotlib, bs4, oracledb, SQLAlchemy, ggplot2, tidyverse} \\
+     %-----------(INSIDE SKILLS) INTERESTS SECTION--------------%
+     \vspace{-1 pt}\begin{tcolorbox}[colback=gray!20, colframe=white, boxrule=0 pt, arc=0 pt, left=-2 pt, right=-4 pt, top=1 pt, bottom=1 pt]
+        \textbf{Interests}{: Hiking, German Language, Climbing, Anime, Board Games, Soccer, Volleyball, Service Projects, Pizza Making}
+     \end{tcolorbox}\vspace{0 pt}
+     %----------------------------------------------------------
+}}
+\end{itemize}
+%-------------------------------------------
+\end{document}
